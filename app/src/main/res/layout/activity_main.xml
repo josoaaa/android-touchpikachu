@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Count: 0"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/pikachuImage"
+        android:layout_width="294dp"
+        android:layout_height="504dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/pikachu" />
+
+    <TextView
+        android:id="@+id/cooldownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pikachuImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="You can click again in 3 seconds!"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
